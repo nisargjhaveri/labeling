@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select New Image</title>
+	<script src='data/ControllList.js'></script>
+	<script>
+		doonload=function(){
+			var usedNo=new Array();
+			for(i=0;i<tags.length;i++){
+				strlen=tags[i].length;
+				usedNo[usedNo.length]=parseInt(tags[i].substr(3,strlen-3));
+			}
+			for(i=0;i>=0;i++){
+				if(usedNo.indexOf(i)==-1){
+					document.forms.action.no.value=i;
+					break;
+				}
+			}
+			document.forms.action.conNo.value=tags.length;
+			t=setTimeout("document.forms.action.submit();",500);
+		}
+	</script>
+</head>
+<body onload='doonload();' style='background:white;'>
+	<div id='result' style='position:fixed;left:20%;'>
+		<span style='font-size:40px;'>Select File</span><br>
+		<span style='font-size:25px;'>Please Wait...<img src='please.gif' /></span>
+		<form action='/upImg' method='GET' name='action' style='display:none'>
+			<input name='no' type='text' />
+			<input name='conNo' type='text' />
+			<input type='submit' />
+		</form>
+	</div>
+	<br><br><br>
+	<div id='footer' style='position:fixed;width:94%;left:3%;bottom:-2px;border:1px solid green;border-top-left-radius:5px;border-top-right-radius:5px;padding:5px;font-size:20px;background:lightgreen'>
+		<table width='100%'>
+			<tr>
+				<td><a href='index.html'> &larr; Back to Index</a> &nbsp;&nbsp; | &nbsp;&nbsp; Add new diagram</td>
+				<td style='text-align:right;'>&copy; Created By Nisarg Jhaveri</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

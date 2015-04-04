@@ -1,0 +1,9 @@
+var tags=new Array();
+var pic=new Array();
+var names=new Array();
+tags[0]='tag0';
+names[0]='Plant Cell';
+pic[0]='img.gif';
+tags[1]='tag1';
+names[1]='Animal Cell';
+pic[1]='img.gif';

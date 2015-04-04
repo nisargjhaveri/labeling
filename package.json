@@ -1,0 +1,14 @@
+{
+  "name": "Labeling",
+  "version": "0.0.0",
+  "description": "An diagram tagging application",
+  "main": "app.js",
+  "scripts": {
+    "start": "./bin/node --harmony app.js"
+  },
+  "author": "Nisarg Jhaveri <nisargjhaveri@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "appjs": "0.0.20"
+  }
+}
