@@ -1,8 +1,16 @@
 # labeling
-An diagram labeling app
+An diagram labeling app. To help school students and teachers to deliver and gain knowledge in better, newer way!
+
+I wrote it years ago. It was my first attempt with `Node.js` and `appjs`. So, the code might not be nice enough.
+
+## Features
+- Add new diagram.
+- Edit diagrams.
+- Learn, Practice and Test modes.
+- Multiple language support, currently English and Gujarati.
 
 ## How to setup
-- Clone the repository
+- Clone the repository.
 - run `npm install`, it should install dependencies.
 - Make sure that you have Node.js v0.8. Otherwise somehow get it. (maybe use `nvm` or getting the binary for your OS and putting it in `./bin`.)
 
